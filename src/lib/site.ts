@@ -1,8 +1,8 @@
-export const SITE_NAME = '단위·규격 변환기';
-export const SITE_TAGLINE = '평·길이·무게·온도·사이즈·Base64·JSON을 브라우저에서 바로 변환';
+export const SITE_NAME = '브라우저 텍스트·이미지 도구';
+export const SITE_TAGLINE = '글자수 세기·WebP 변환·이미지 리사이즈·JSON 정리·OG 미리보기를 브라우저에서 바로 처리';
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.netlify.app').replace(/\/+$/, '');
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || '';
-export const LAST_UPDATED = '2026-10-17';
+export const LAST_UPDATED = '2026-10-20';
 /** 도구 페이지를 제외한 정적 페이지 경로 (sitemap, 검증 스크립트 공통) */
 export const STATIC_PATHS = ['/', '/about/', '/guide/', '/privacy/', '/terms/', '/contact/'];
 
@@ -18,7 +18,7 @@ export const ADSENSE_SLOTS = {
 
 export type AdPlacement = keyof typeof ADSENSE_SLOTS;
 
-/** 경로(예: /area/)를 절대 URL 로 변환합니다. */
+/** 경로(예: /character-counter/)를 절대 URL 로 변환합니다. */
 export function absoluteUrl(path: string): string {
   const p = path.startsWith('/') ? path : `/${path}`;
   return `${SITE_URL}${p}`;

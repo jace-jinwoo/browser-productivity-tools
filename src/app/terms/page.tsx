@@ -19,14 +19,14 @@ export default function TermsPage() {
 
       <section>
         <h2 className="text-xl font-semibold text-gray-900">1. 서비스의 목적</h2>
-        <p className="mt-2">{SITE_NAME}는 단위 변환, 사이즈 참고표, 개발자용 간단 도구를 무료로 제공합니다.</p>
+        <p className="mt-2">{SITE_NAME}는 글자수·단어수 세기, 텍스트 정리, 이미지 WebP 변환·리사이즈, JSON 포맷터, OG 태그 미리보기를 무료로 제공합니다.</p>
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-gray-900">2. 결과의 성격과 면책</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>제공되는 결과는 참고용이며 정확성·완전성·특정 목적에의 적합성을 보증하지 않습니다.</li>
-          <li>신발·의류 사이즈는 근사 참고값이며 브랜드 공식 사이즈표가 우선합니다.</li>
+          <li>이미지 처리는 브라우저·기기의 메모리와 지원 기능에 따라 실패하거나 결과가 다를 수 있으며, 원본 파일은 이용자가 직접 보관해야 합니다.</li>
           <li>계약, 의료, 법률, 안전과 관련된 판단은 공식 문서와 전문가 확인에 따라야 하며, 이 서비스의 결과만으로 내린 판단에 대한 책임은 이용자에게 있습니다.</li>
         </ul>
       </section>

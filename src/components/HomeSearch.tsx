@@ -39,7 +39,7 @@ export default function HomeSearch({ items, categories }: { items: SearchItem[];
         type="search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="예: 평, 인치, JSON, 신발"
+        placeholder="예: 글자수, WebP, 리사이즈, JSON"
         className="mt-3 w-full rounded-lg border border-gray-300 px-4 py-3 text-base focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200"
       />
       <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="카테고리 필터">

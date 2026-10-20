@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
-import Base64Tool from '@/components/Base64Tool';
-import { TemperatureTool, UnitConverterTool } from '@/components/Converters';
+import ImageResizerTool from '@/components/ImageResizerTool';
+import ImageToWebpTool from '@/components/ImageToWebpTool';
 import JsonTool from '@/components/JsonTool';
-import { ClothingSizeTool, ShoeSizeTool } from '@/components/SizeTools';
+import OgPreviewTool from '@/components/OgPreviewTool';
+import TextCleanerTool from '@/components/TextCleanerTool';
+import TextStatsTool from '@/components/TextStatsTool';
 import ToolPage from '@/components/ToolPage';
 import { getTool, TOOLS } from '@/data/tools';
 import { SITE_NAME } from '@/lib/site';
@@ -42,20 +44,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function renderTool(slug: string): ReactNode {
   switch (slug) {
-    case 'area':
-      return <UnitConverterTool category="area" />;
-    case 'length':
-      return <UnitConverterTool category="length" />;
-    case 'weight':
-      return <UnitConverterTool category="weight" />;
-    case 'temperature':
-      return <TemperatureTool />;
-    case 'shoe-size':
-      return <ShoeSizeTool />;
-    case 'clothing-size':
-      return <ClothingSizeTool />;
-    case 'base64':
-      return <Base64Tool />;
+    case 'character-counter':
+      return <TextStatsTool mode="char" />;
+    case 'word-counter':
+      return <TextStatsTool mode="word" />;
+    case 'text-cleaner':
+      return <TextCleanerTool />;
+    case 'image-to-webp':
+      return <ImageToWebpTool />;
+    case 'image-resizer':
+      return <ImageResizerTool />;
+    case 'og-preview':
+      return <OgPreviewTool />;
     case 'json-formatter':
       return <JsonTool />;
     default:

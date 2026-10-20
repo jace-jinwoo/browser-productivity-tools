@@ -6,8 +6,8 @@ import { join, extname, relative } from 'node:path';
 const OUT = 'out';
 const REQUIRED_PAGES = [
   '/', '/about/', '/guide/', '/privacy/', '/terms/', '/contact/',
-  '/area/', '/length/', '/weight/', '/temperature/',
-  '/shoe-size/', '/clothing-size/', '/base64/', '/json-formatter/',
+  '/character-counter/', '/word-counter/', '/image-to-webp/', '/image-resizer/',
+  '/json-formatter/', '/og-preview/', '/text-cleaner/',
 ];
 const REQUIRED_FILES = ['robots.txt', 'sitemap.xml', '404.html', 'icon.svg'];
 

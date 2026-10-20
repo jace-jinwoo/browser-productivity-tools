@@ -21,13 +21,13 @@ export default function PrivacyPage() {
       <section>
         <h2 className="text-xl font-semibold text-gray-900">1. 수집하는 개인정보</h2>
         <p className="mt-2">
-          {SITE_NAME}는 회원가입과 로그인 기능이 없으며, 이름·연락처 등 개인정보를 직접 수집하지 않습니다. 도구에 입력한 값(숫자, 텍스트, Base64, JSON 등)은 방문자의 브라우저 안에서만 처리되며 서버로 전송되거나 저장되지 않습니다.
+          {SITE_NAME}는 회원가입과 로그인 기능이 없으며, 이름·연락처 등 개인정보를 직접 수집하지 않습니다. 도구에 입력한 값(텍스트, 이미지 파일, JSON, HTML 등)은 방문자의 브라우저 안에서만 처리되며 서버로 전송되거나 저장되지 않습니다.
         </p>
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-gray-900">2. 브라우저 저장소</h2>
-        <p className="mt-2">현재 서비스는 쿠키나 로컬 저장소에 입력값을 저장하지 않습니다.</p>
+        <p className="mt-2">현재 서비스는 쿠키나 로컬 저장소에 입력값을 저장하지 않습니다. 이미지는 브라우저 메모리(Blob/객체 URL)에서만 처리되며 페이지를 닫거나 초기화하면 해제됩니다. OG 미리보기에서 입력한 og:image 주소의 이미지는 브라우저가 해당 주소로 직접 요청해 불러오므로 그 이미지 서버에 접속 정보가 전달될 수 있습니다.</p>
       </section>
 
       <section>

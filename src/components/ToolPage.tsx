@@ -49,7 +49,7 @@ export default function ToolPage({ meta, children }: { meta: ToolMeta; children:
       <p className="mt-2 text-gray-600">{meta.shortDescription}</p>
 
       <section aria-labelledby="tool-heading" className="mt-6">
-        <h2 id="tool-heading" className="sr-only">변환 도구</h2>
+        <h2 id="tool-heading" className="sr-only">도구</h2>
         {children}
       </section>
 
@@ -110,7 +110,7 @@ export default function ToolPage({ meta, children }: { meta: ToolMeta; children:
           ))}
         </ul>
         <p className="mt-2 text-xs text-gray-500">
-          출처 링크는 일반 참고 경로이며, 법령·표준은 개정될 수 있으므로 중요한 판단 전에는 원문을 직접 확인하세요.
+          출처 링크는 공식 문서(MDN·WHATWG·IETF RFC 등)의 참고 경로입니다. 브라우저별 구현과 표준은 바뀔 수 있으니 중요한 판단 전에는 원문을 직접 확인하세요.
         </p>
       </section>
 

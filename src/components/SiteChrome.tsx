@@ -12,7 +12,8 @@ export function SiteHeader() {
         <nav aria-label="주요 메뉴">
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
             <li><Link href="/" className="text-gray-700 hover:text-brand-700">홈</Link></li>
-            <li><Link href="/area/" className="text-gray-700 hover:text-brand-700">평↔㎡</Link></li>
+            <li><Link href="/character-counter/" className="text-gray-700 hover:text-brand-700">글자수</Link></li>
+            <li><Link href="/image-to-webp/" className="text-gray-700 hover:text-brand-700">WebP</Link></li>
             <li><Link href="/json-formatter/" className="text-gray-700 hover:text-brand-700">JSON</Link></li>
             <li><Link href="/guide/" className="text-gray-700 hover:text-brand-700">이용 안내</Link></li>
             <li><Link href="/about/" className="text-gray-700 hover:text-brand-700">서비스 소개</Link></li>
@@ -46,7 +47,7 @@ export function SiteFooter() {
           </ul>
         </nav>
         <p className="mt-4 text-xs text-gray-500">
-          © {SITE_NAME}. 변환 결과는 참고용이며 계약·의료·법률·안전과 관련된 판단의 유일한 근거로 사용하지 마세요.
+          © {SITE_NAME}. 처리 결과는 참고용이며 제출·계약·법률과 관련된 판단은 최종 결과물을 직접 확인한 뒤 하세요. 파일과 텍스트는 서버로 전송되지 않습니다.
         </p>
       </div>
     </footer>

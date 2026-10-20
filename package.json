@@ -1,8 +1,8 @@
 {
-  "name": "unit-converters",
+  "name": "browser-productivity-tools",
   "version": "1.0.0",
   "private": true,
-  "description": "단위·규격 변환기 - 평/제곱미터, 길이, 무게, 온도, 신발·의류 사이즈, Base64, JSON Formatter",
+  "description": "브라우저 텍스트·이미지 도구 - 글자수·단어수, 텍스트 정리, WebP 변환, 이미지 리사이즈, JSON Formatter, OG 미리보기",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

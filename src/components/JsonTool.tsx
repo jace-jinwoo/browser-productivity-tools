@@ -6,7 +6,7 @@ import { formatJson, minifyJson, type JsonIndent } from '@/lib/json';
 
 type Mode = 'format' | 'minify';
 
-const SAMPLE = '{"name":"단위·규격 변환기","tools":["area","json-formatter"],"meta":{"version":1,"free":true}}';
+const SAMPLE = '{"name":"브라우저 텍스트·이미지 도구","tools":["character-counter","json-formatter"],"meta":{"version":1,"free":true}}';
 
 export default function JsonTool() {
   const uid = useId();
