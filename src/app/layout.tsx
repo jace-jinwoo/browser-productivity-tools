@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     description: SITE_TAGLINE,
     url: '/',
   },
+  verification : { google : '1bHbH5-Aa-wk74CWkqUWQGRmZ6KMkvRetikjf8rLAnQ' },
+  other : { 'google-adsense-account' : 'ca-pub-4185652173034768' }
   twitter: { card: 'summary', title: SITE_NAME, description: SITE_TAGLINE },
 };
 
